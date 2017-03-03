@@ -1,0 +1,7 @@
+#!/bin/bash
+
+PATH=$PATH:/System/Library/Frameworks
+clang -fno-objc-arc -framework Foundation -framework CoreServices dict.m
+mv a.out dict
+
+./dict time
